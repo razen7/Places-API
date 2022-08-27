@@ -3,6 +3,10 @@ const PlaceModel = require("../models/places.model");
 // reference to router class
 const router = require('express').Router();
 
+router.get('/', async (req, res) => {
+    res.send('This is a backend app to be used with Postman');
+});
+
 // Add a place
 router.post('/addPlace', async (req, res) => {
     let { name, city, state } = req.body;
