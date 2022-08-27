@@ -23,4 +23,4 @@ app.use(express.json());
 app.use('/', require('./routes/place.route'));
 
 // hosting on port
-app.listen(8000);
+app.listen(process.env.PORT || 8000);
